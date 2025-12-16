@@ -1,0 +1,366 @@
+Team,off_poss_length,off,def
+William & Mary,13.5,109.7,105.6
+IU Indy,14.1,102.5,120.7
+Georgia,14.2,120.9,99.1
+Saint Louis,14.2,116.4,98.9
+Alabama,14.3,125.7,100.9
+Cal St. Fullerton,14.3,104.9,111.5
+Florida St.,14.3,111.5,104.9
+Cornell,14.3,114.1,115
+Cal Poly,14.4,104.5,110.8
+FIU,14.6,106.1,108.1
+Louisville,14.7,127,99.3
+Kennesaw St.,14.8,110,110.9
+Michigan,14.8,125.2,87.6
+South Florida,14.8,112.9,103.4
+St. John's,15,120.7,96.4
+Texas A&M,15,117,101.7
+Marquette,15,110.4,102.8
+Arkansas St.,15,108.8,108.1
+Kansas St.,15.1,116.9,104.7
+Akron,15.2,122.5,109.7
+Kentucky,15.2,119.2,96.4
+Cincinnati,15.2,104.2,93.7
+Arkansas,15.3,120.8,99.4
+SMU,15.3,118.6,101.7
+BYU,15.4,124.3,96.2
+Duke,15.4,124,91.4
+Providence,15.4,119.5,107
+Butler,15.4,119.1,103.7
+Belmont,15.4,114.3,103.4
+UNLV,15.4,109.3,107.7
+Radford,15.5,105,111.8
+Kent St.,15.5,113.1,110.7
+Sam Houston St.,15.5,112.4,107.9
+Vanderbilt,15.5,125.8,98.4
+CSUN,15.5,107,111.6
+Georgia Southern,15.6,107.2,113.3
+Longwood,15.6,102.5,115.7
+N.C. State,15.6,120.8,100.7
+Oklahoma St.,15.6,117,102.3
+Duquesne,15.7,109.4,107.4
+High Point,15.7,116.8,109.6
+Southern,15.7,104.2,108.8
+Xavier,15.7,112.8,102.5
+UCF,15.7,119.6,104.5
+Southern Illinois,15.7,109.4,105
+Charleston Southern,15.7,102.3,110.5
+Gonzaga,15.7,125.2,92.2
+Iowa St.,15.7,123.6,90.7
+Marshall,15.7,108.9,108.3
+George Washington,15.8,117.7,107.1
+Lindenwood,15.8,101.7,108.6
+Georgia Tech,15.8,103.7,101
+Arizona,15.8,124.9,92.6
+Miami FL,15.8,116.4,97.9
+Winthrop,15.8,115.9,110.3
+Prairie View A&M,15.9,100,112.5
+McNeese,15.9,113.6,101.2
+Miami OH,15.9,112.3,107.5
+LSU,15.9,119.3,100.1
+Murray St.,16,115.8,108
+Wake Forest,16,117,99.8
+Western Kentucky,16,107.8,106.7
+Northwestern,16,118,103.9
+Iona,16,107,108.7
+Missouri,16,120.1,104.7
+Arkansas Pine Bluff,16,98.1,116
+Ohio St.,16,119,101.1
+Sacramento St.,16,101.4,110.6
+Massachusetts,16,105.7,105.8
+South Dakota,16.1,106.6,115.5
+Milwaukee,16.1,106.7,113
+Northern Kentucky,16.1,106.5,109.4
+Lipscomb,16.1,108.1,105.6
+VCU,16.1,114.9,98.3
+Florida,16.1,119.9,93.6
+Colorado,16.2,119.3,105.9
+USC,16.2,118.4,100.4
+Queens,16.2,115,118.3
+Quinnipiac,16.2,105.7,105.9
+Tennessee Tech,16.2,102.3,110.4
+Southeast Missouri,16.2,103.7,109.1
+UC Davis,16.2,104.5,107.3
+Nebraska,16.2,120.1,98.1
+New Mexico,16.2,112.7,101.2
+North Carolina,16.2,118.8,97.7
+Wisconsin,16.3,118.9,100.8
+Seattle,16.3,108.8,103
+UT Rio Grande Valley,16.3,104,107.3
+Penn,16.3,106.7,113.6
+TCU,16.3,110.7,97.5
+Toledo,16.3,113.2,113.2
+Weber St.,16.3,105.5,109.8
+Oklahoma,16.4,120.3,104.2
+Penn St.,16.4,115.8,109.3
+UTSA,16.4,99.7,109.3
+Florida Atlantic,16.4,114.6,109.2
+Southern Indiana,16.4,97.8,110.9
+Gardner Webb,16.4,96.4,119.3
+Portland,16.5,104.8,109.7
+Utah St.,16.5,117.9,100.3
+Virginia,16.5,122.7,101.3
+UC San Diego,16.5,115.1,105.8
+Tennessee,16.5,119.1,96
+UAB,16.5,112.3,106.9
+Mississippi St.,16.5,113.6,103
+Campbell,16.6,104.6,109.8
+Arizona St.,16.6,116,103
+Dartmouth,16.6,104.1,111.3
+Bradley,16.6,107.9,103.7
+Virginia Tech,16.6,115.9,102.4
+Montana,16.6,108.5,112.4
+Cleveland St.,16.6,104.6,118.9
+Georgetown,16.6,111.8,105.1
+Syracuse,16.6,111.8,100.3
+San Diego St.,16.6,117.1,100.9
+Purdue Fort Wayne,16.6,108,114
+Utah Valley,16.6,109.8,99.4
+Southern Utah,16.7,100.6,114.4
+Stanford,16.7,113,104.2
+Oral Roberts,16.7,105.2,116.1
+North Florida,16.7,103.9,120.1
+Auburn,16.7,122.9,102.8
+Nicholls,16.7,102.7,110.3
+Indiana St.,16.7,103.3,105.4
+LIU,16.8,104.5,109.5
+Tulane,16.8,109.5,114
+Hawaii,16.8,104.8,98.1
+Oakland,16.9,114.3,113.2
+California,16.9,114.3,102.7
+Baylor,16.9,123.2,104.1
+Saint Joseph's,16.9,105.1,106.9
+Utah Tech,16.9,102.7,109.8
+St. Thomas,16.9,109.3,107.3
+Texas,16.9,119.7,103.8
+Alabama St.,16.9,106.1,113.8
+Lamar,16.9,99.7,105.6
+Clemson,16.9,119.5,99.7
+Washington,16.9,117.3,101.3
+Grambling St.,16.9,99.5,109.1
+Florida Gulf Coast,16.9,108.8,110.3
+Tennessee St.,17,100.3,106.6
+Indiana,17,117.9,96.6
+Washington St.,17,110.2,110.5
+Florida A&M,17,97.8,115
+Stephen F. Austin,17,107.7,105.8
+Dayton,17,112.6,100.1
+Central Arkansas,17,100.7,107.3
+Mount St. Mary's,17,100.6,112.2
+Old Dominion,17,106.2,110.9
+DePaul,17.1,107.8,103.2
+Morgan St.,17.1,98.2,120.7
+Troy,17.1,108.9,107
+Portland St.,17.1,103,105.6
+North Carolina A&T,17.1,99.4,113.3
+Elon,17.1,113.4,114.7
+Cal St. Bakersfield,17.1,100.1,113.4
+Wyoming,17.1,113.7,104.4
+Maryland,17.1,111.6,104.4
+Memphis,17.1,112.4,100.6
+Eastern Washington,17.1,109,115.2
+UC Irvine,17.1,101.2,96.9
+Northeastern,17.1,102.5,106.9
+Texas Tech,17.2,120.8,99.3
+Western Carolina,17.2,101.8,111.1
+Georgia St.,17.2,96.4,112.2
+Illinois Chicago,17.2,107.3,109.9
+Northern Colorado,17.2,108.9,108.8
+Fresno St.,17.2,106.3,107.4
+American,17.2,103.6,109.6
+Manhattan,17.2,104.9,119.3
+USC Upstate,17.2,102.2,109.6
+Rhode Island,17.2,109.8,103
+South Dakota St.,17.2,106,108.4
+Tulsa,17.2,118.4,106.7
+Chattanooga,17.2,109.3,114.7
+Austin Peay,17.2,101.9,104.4
+Louisiana Monroe,17.2,98.9,119.2
+NJIT,17.2,92.5,112.2
+Kansas City,17.3,94.9,112.7
+North Dakota,17.3,96.8,113.2
+Mississippi,17.3,114.4,100.2
+Ohio,17.3,108.3,111
+Merrimack,17.3,101.7,110.9
+Alcorn St.,17.3,99.8,115
+Youngstown St.,17.3,105,105.3
+Santa Clara,17.3,117,104
+Seton Hall,17.3,111.8,95.8
+Loyola MD,17.3,102,118.4
+North Dakota St.,17.3,108.2,106.6
+Buffalo,17.3,109.7,113.5
+Bowling Green,17.3,108.5,103
+Lehigh,17.4,101,113
+South Alabama,17.4,106.3,108.3
+Detroit Mercy,17.4,103.1,113.8
+Fairfield,17.4,102.7,113.4
+Richmond,17.4,111.7,104
+East Carolina,17.4,99.1,109.3
+Sacred Heart,17.4,106.2,114.7
+Oregon,17.4,114.3,103.9
+Le Moyne,17.4,106.5,118.5
+UMass Lowell,17.5,102.4,113.9
+East Tennessee St.,17.5,111,105.6
+Mercer,17.5,109.4,109.3
+Howard,17.5,99.6,111
+Fairleigh Dickinson,17.5,99.1,120.9
+Texas Southern,17.5,98.9,113.6
+East Texas A&M,17.5,100.4,110.8
+Missouri St.,17.5,103.1,111.5
+San Diego,17.5,105.5,112.7
+Saint Francis,17.5,93.4,116.2
+Coppin St.,17.5,92.9,120.7
+Eastern Kentucky,17.6,106,114.6
+Samford,17.6,106.8,113.5
+UC Riverside,17.6,105.8,113.5
+UNC Greensboro,17.6,105.2,114.3
+Illinois,17.6,125.9,99.6
+Nevada,17.6,113.8,105
+UMBC,17.6,104,113.9
+Cal Baptist,17.6,109.6,105.8
+UC Santa Barbara,17.6,112.9,111.5
+St. Bonaventure,17.6,110.9,105.4
+Utah,17.6,112.5,109
+Albany,17.7,101.8,115.9
+UCLA,17.7,119,99.3
+Grand Canyon,17.7,108.8,100.7
+Western Michigan,17.7,105.4,112.8
+Rutgers,17.7,107.8,106.3
+Boise St.,17.7,113.6,97.1
+Southern Miss,17.7,107.7,110.4
+Harvard,17.7,105.5,109.7
+Creighton,17.7,115.5,103.7
+Marist,17.7,99.8,99.3
+Coastal Carolina,17.7,102.1,107.8
+New Orleans,17.8,107.1,112.5
+SIUE,17.8,101.9,107.4
+Kansas,17.8,116.9,92.9
+Furman,17.8,109.4,109.1
+Northern Arizona,17.8,101.9,110.8
+Michigan St.,17.8,118.4,91.7
+Lafayette,17.8,98.5,113.1
+Temple,17.8,113.9,113.8
+Wofford,17.8,104.8,110.6
+Rice,17.8,105.5,110.2
+Texas A&M Corpus Chris,17.8,101,106.2
+Wagner,17.9,100.6,113.7
+Navy,17.9,103.2,106.9
+Mississippi Valley St.,17.9,89.2,121.5
+Minnesota,17.9,110.5,104.2
+Yale,17.9,121.3,110.3
+Long Beach St.,17.9,105.5,113.4
+Bucknell,17.9,99.4,111.4
+Hampton,17.9,103.3,109.3
+Denver,17.9,111.6,122.9
+Wichita St.,17.9,111.3,103.6
+Holy Cross,17.9,103,113.8
+Brown,18,99.7,104.9
+Stetson,18,98.8,116
+Morehead St.,18,100,113.8
+West Virginia,18,111.6,99.3
+Loyola Chicago,18,103.7,116.4
+Middle Tennessee,18,108.3,108.1
+South Carolina St.,18,94.6,117.8
+Charleston,18,108.2,110.4
+Monmouth,18,105.1,111.1
+Evansville,18,100.1,110.1
+Davidson,18,111.2,106.4
+Loyola Marymount,18,105.1,102.3
+Illinois St.,18.1,112.5,105.1
+Pepperdine,18.1,99.7,109.4
+Tarleton St.,18.1,106.4,109.8
+New Hampshire,18.1,95.8,112.1
+West Georgia,18.1,102,114.7
+Houston,18.1,119.9,91.8
+Colgate,18.1,108.8,109.5
+New Mexico St.,18.1,108.1,105.7
+Bethune Cookman,18.1,104.4,110.4
+Nebraska Omaha,18.1,106.7,113.4
+Jackson St.,18.1,95.7,110.6
+Hofstra,18.1,110.5,104.6
+Purdue,18.1,127.4,97.4
+UNC Asheville,18.1,105.5,111.8
+Wright St.,18.2,108.4,106.6
+Northern Illinois,18.2,102.7,116.5
+Jacksonville St.,18.2,100.5,107.8
+Boston College,18.2,103.9,101.9
+Eastern Michigan,18.2,104,108.5
+Drake,18.2,111.8,108.9
+Valparaiso,18.2,103.4,106.9
+Texas St.,18.3,101.7,108
+Drexel,18.3,102.2,112.1
+San Francisco,18.3,112.1,104.2
+Notre Dame,18.3,115.4,101.4
+Southeastern Louisiana,18.3,99.1,108.6
+Stony Brook,18.3,106.2,109.1
+Robert Morris,18.3,106,107.6
+Central Connecticut,18.3,102.3,108.8
+Oregon St.,18.4,107.6,108.6
+Columbia,18.4,109.7,105.9
+Connecticut,18.4,121.4,92.6
+Saint Mary's,18.4,116,96.7
+Maine,18.4,91.9,108.9
+Vermont,18.4,110.5,113.8
+Stonehill,18.4,95.6,112.9
+La Salle,18.5,101.2,109.1
+Army,18.5,98.7,115
+UT Arlington,18.5,103.6,104.4
+Jacksonville,18.5,100.8,112.1
+South Carolina,18.5,112.1,103.2
+UTEP,18.5,101.1,106.6
+North Carolina Central,18.5,96,115.1
+Norfolk St.,18.5,100.1,105.8
+Bryant,18.6,99.6,111.8
+George Mason,18.6,112.8,100.2
+North Alabama,18.6,104.1,110.2
+Villanova,18.6,120,100.9
+James Madison,18.6,110.8,113.8
+Tennessee Martin,18.6,101.9,108.3
+VMI,18.6,102.2,117.5
+Liberty,18.6,113.4,107.8
+Montana St.,18.6,106,107.4
+Bellarmine,18.6,108.4,118
+Charlotte,18.7,107.6,111.3
+Eastern Illinois,18.7,96.9,112.4
+North Texas,18.7,103.9,101.4
+Fordham,18.8,104.4,108.2
+Idaho,18.8,110,113
+Louisiana Tech,18.8,102.4,104.2
+Little Rock,18.8,101,114.8
+Central Michigan,18.8,102.1,116.5
+Green Bay,18.8,105.4,114.3
+Chicago St.,18.8,99.5,118.1
+Delaware St.,18.8,93,113.1
+Northwestern St.,18.8,106.3,116.8
+Northern Iowa,18.9,106.1,97.9
+Niagara,18.9,95.7,116.4
+Ball St.,18.9,98,111.8
+Alabama A&M,19,100,109.1
+Western Illinois,19,98,117.7
+Siena,19,105.3,104.9
+Pacific,19.1,109.1,104.8
+Princeton,19.1,100.3,109.1
+Towson,19.1,108.1,106.2
+Saint Peter's,19.1,99.8,110.9
+Incarnate Word,19.1,111,113
+Presbyterian,19.1,101.2,109.4
+San Jose St.,19.2,108.6,111.2
+Iowa,19.2,120,97.3
+Colorado St.,19.2,122.3,108.9
+The Citadel,19.3,99.1,121.2
+Delaware,19.3,103.3,111.8
+Rider,19.3,92.5,111.5
+Air Force,19.3,97.7,112.3
+Pittsburgh,19.3,112.7,107.3
+UNC Wilmington,19.3,114.1,107.7
+Canisius,19.4,96.1,112.8
+Houston Christian,19.4,105.8,114.7
+New Haven,19.5,95.7,112.8
+Abilene Christian,19.5,101.5,106.7
+Binghamton,19.6,97.6,119.4
+Appalachian St.,19.8,102.5,109.9
+Louisiana,19.9,95.3,111.4
+Boston University,19.9,107.9,119.2
+Idaho St.,20.1,107.6,107.5
+Maryland Eastern Shore,20.3,95.9,113.2
+Mercyhurst,21.2,97.9,113.7

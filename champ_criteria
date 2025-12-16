@@ -1,0 +1,178 @@
+library(tidyverse)
+library(ggimage)
+data <- read_csv("C:/Users/drawn/Documents/CBK-2025-26/cbk-analytics/cbk natty criteria - balanced.csv")
+view(data)
+logos <- read_csv("C:/Users/drawn/Documents/KenPomR/logos.csv")
+view(logos)
+data <- data %>%
+  left_join(logos, by = c("Team" = "team")) %>%
+    select(logo, Team, c(2,5:11))
+
+
+plot1 <- ggplot(data, aes(x = off, y = -def)) +
+  geom_vline(xintercept = 119.15, linetype = "dashed", color = "#df5f5f", linewidth = 2) +
+  geom_hline(yintercept = -99.15, linetype = "dashed", color = "#df5f5f", linewidth = 2) +
+geom_image(aes(image = logo), alpha = 0.8) +
+  labs(title = "College Basketball Team Strength",
+       subtitle = "Each teams' offensive and defensive rating",
+       x = "Offensive Rating",
+       y = "Defensive Rating") +
+  theme_minimal(base_size = 14) + 
+  theme(
+    panel.background = element_rect(fill = "#beb7b7", color = NA),
+    plot.background = element_rect(fill = "#beb7b7", color = NA),
+    text = element_text(color = "black"),
+    panel.grid.major = element_line(color = "grey30", linewidth = 0.2),
+    panel.grid.minor = element_line(color = "grey30", linewidth = 0.1),
+    legend.position = "bottom",
+    plot.title = element_text(face = "bold", size = 40, color = "black", hjust = 0.5),
+    plot.subtitle = element_text(color = "black", size = 25, hjust = 0.5),
+    axis.title = element_text(size = 25, color = "black")
+  )
+plot1
+
+balanced <- read_csv("C:/Users/drawn/Documents/CBK-2025-26/cbk-analytics/cbk natty criteria - preimposing.csv")
+view(balanced)
+balanced <- balanced %>%
+  left_join(logos, by = c("Team" = "team")) %>%
+    select(logo, Team, c(11))
+
+head(balanced)
+# 1. Order the Team factor by 'off_poss_length'
+# This is crucial to make the connecting line meaningful.
+balanced <- balanced %>%
+  # Assign a constant Y value (e.g., 1) to all teams
+  mutate(y_pos = 0)
+
+# 2. Create the Plot
+plot2 <- ggplot(balanced, aes(y = off_poss_length, x = y_pos)) +
+  
+  # 2. Add Team Logos as the data points
+  # You can adjust the 'size' argument (e.g., 0.05) to make logos bigger/smaller.
+  geom_image(aes(image = logo), size = 0.04, by = "width") +
+  geom_jitter(width = 0.02, height = 0, alpha = 0.0) + # Slight jitter to avoid overlap
+  
+  # 5. Custom Scales and Labels
+  labs(title = "Average Offensive Possession Length (Seconds)",
+       subtitle = "Comparing Play Style of Selected Teams: Fastest to Slowest",
+       y = "") + # Y-axis is meaningless, so we remove the label
+  
+  # 6. Styling for Social Media (Dark Theme)
+  theme_minimal() + 
+  theme(
+    # Dark background for video
+    panel.background = element_rect(fill = "#8b8888", color = NA),
+    plot.background = element_rect(fill = "#8b8888", color = NA),
+    
+    # White text
+    text = element_text(color = "white"),
+    
+    # Hide all Y-axis elements since they don't add info
+    axis.title.x = element_blank(),
+    axis.text.x = element_blank(),
+    panel.grid.major.y = element_blank(), 
+    panel.grid.minor.y = element_blank(),
+    
+    # Titles
+    plot.title = element_text(face = "bold", size = 18, hjust = 0.5),
+    plot.subtitle = element_text(color = "grey80", hjust = 0.5)
+  )
+plot2
+
+imposing <- read_csv("C:/Users/drawn/Documents/CBK-2025-26/cbk-analytics/cbk natty criteria - imposing.csv")
+view(imposing)
+library(gt)
+imposing <- imposing %>%
+  left_join(logos, by = c("Team" = "team")) %>%
+    select(logo, Team, c(12))
+library(scales)
+head(imposing)
+tbl1 <- imposing %>%
+  arrange(-`NCSOS`) %>%
+  gt() %>%
+  tab_header(
+    title = md("**Non-Conference Strength of Schedule**")
+  ) %>%
+  text_transform(
+    locations = cells_body(columns = logo),
+    fn = function(x) {
+      web_image(url = x, height = 30) # Display logo at a reasonable size
+    }
+  ) %>%
+  cols_label(
+    logo = "", # No header for the logo column
+    Team = md("**Team**"),
+    `NCSOS` = md("**NC SOS**"),
+  ) %>%
+  cols_align(
+    align = "center",
+  ) %>%
+  
+  cols_align(
+    align = "left",
+    columns = c(Team)
+  ) %>%
+  data_color(
+    column = NCSOS, # Target the 'value' column
+    colors = scales::col_numeric(
+      palette = c("#e69791", "#70d272"), # Define the color range (e.g., white to a specific hex color)
+      domain = c(-15, 15)) # Define the possible range of values
+    ) %>%
+  opt_table_font(font = google_font("Roboto")) %>%
+  tab_options(
+    column_labels.background.color = "#E0E0E0", # Light gray header
+    table.border.top.width = px(3),
+    table.border.top.color = "#AFAFAF"
+  )
+tbl1
+gtsave(tbl1)
+
+tested <- read_csv("C:/Users/drawn/Documents/CBK-2025-26/cbk-analytics/cbk natty criteria - tested.csv")
+
+tested <- tested %>%
+  left_join(logos, by = c("Team" = "team")) %>%
+    select(logo, Team, c(5))
+
+head(tested)
+
+tbl2 <- tested %>%
+  arrange(-`eFG%`) %>%
+  gt() %>%
+  tab_header(
+    title = md("**Shooting Prowess**")
+  ) %>%
+  text_transform(
+    locations = cells_body(columns = logo),
+    fn = function(x) {
+      web_image(url = x, height = 30) # Display logo at a reasonable size
+    }
+  ) %>%
+  cols_label(
+    logo = "", # No header for the logo column
+    Team = md("**Team**"),
+    `eFG%` = md("**Effective Field Goal %**"),
+  ) %>%
+  cols_align(
+    align = "center",
+  ) %>%
+  
+  cols_align(
+    align = "left",
+    columns = c(Team)
+  ) %>%
+  data_color(
+    column = `eFG%`, # Target the 'value' column
+    colors = scales::col_numeric(
+      palette = c("#e69791", "#70d272"), # Define the color range (e.g., white to a specific hex color)
+      domain = c(.45, .65)) # Define the possible range of values
+    ) %>%
+  opt_table_font(font = google_font("Roboto")) %>%
+  tab_options(
+    column_labels.background.color = "#E0E0E0", # Light gray header
+    table.border.top.width = px(3),
+    table.border.top.color = "#AFAFAF"
+  )
+tbl2
+
+gtsave(tbl1, "table1.png")
+gtsave(tbl2, "table2.png")
