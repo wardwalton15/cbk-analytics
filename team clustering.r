@@ -34,7 +34,7 @@ scaled_features <- style_features %>%
   scale()
 
 set.seed(15)
-k <- 9
+k <- 8
 kmeans_fit <- kmeans(scaled_features, centers = k, nstart = 25)
 ## elbow plot
 wss <- map_dbl(1:15, function(k) {
@@ -115,15 +115,14 @@ head(clustered_teams_logos)
 # 1. Define your cluster names
 # Create a named vector or a lookup table to map numbers to names
 cluster_map <- c(
-  "1" = "test",
-  "2" = "High Octane",
-  "3" = "Defensive Grinders",
-  "4" = "Balanced Teams",
-  "5" = "Three-Point Specialists",
-  "6" = "Rebounding Focused",
-  "7" = "Title Contenders",
-  "8" = "Fast Paced Offense",
-  "9" = "Playmakers"
+  "1" = "Deliberate and Efficient",
+  "2" = "Old School: Slow and Inside",
+  "3" = "Dominate on the Interior",
+  "4" = "Pace-and-Space NBA Style",
+  "5" = "Offensive Glass Cleaners",
+  "6" = "Isolation Specialists",
+  "7" = "Aggressive Slashers",
+  "8" = "Half-Court Set Shooters"
 )
 
 # 2. Prepare the data for the table
@@ -141,7 +140,7 @@ table_data <- clustered_teams_logos %>%
   arrange(cluster_name)
 
 # 3. Create the gt table
-table_data %>%
+tbl <- table_data %>%
   gt() %>%
   # This tells gt to render the HTML strings as actual images
   fmt_markdown(columns = logos_html) %>%
@@ -152,8 +151,54 @@ table_data %>%
   ) %>%
   # Optional: Table styling
   tab_header(title = "College Basketball Offensive Play Styles") %>%
-  opt_align_table_header(align = "left") %>%
+  opt_align_table_header(align = "center") %>%
   tab_options(
     table.width = px(600),
     data_row.padding = px(10)
   )
+tbl
+gtsave(tbl, "team_clusters_table.png")
+
+table_data_wide <- clustered_teams_logos %>%
+  filter(cluster %in% c(1, 4)) %>%
+  mutate(cluster_label = ifelse(cluster == 1, "Deliberate and Efficient", "Pace-and-Space NBA Style")) %>%
+  group_by(cluster_label) %>%
+  # Create a sequence number (1, 2, 3...) for each team in the cluster
+  mutate(row_id = row_number()) %>%
+  ungroup() %>%
+  # Keep only the columns we need for the pivot
+  select(row_id, cluster_label, logo) %>%
+  # Pivot so that each cluster becomes its own column
+  pivot_wider(names_from = cluster_label, values_from = logo) %>%
+  # Remove the row_id column as it's no longer needed for display
+  select(-row_id)
+
+# 3. Create the gt table
+tbl2 <- table_data_wide %>% head(5) %>%
+  gt() %>%
+  # Transform the URLs in both columns into actual images
+  # 'columns = everything()' applies it to both cluster name columns
+  fmt_image(
+    columns = everything(),
+    height = 40 # Adjust the size of the logos here
+  ) %>%
+  tab_header(title = "Old School vs New School") %>%
+  tab_style(
+    style = cell_borders(
+      sides = "right",
+      color = "#D3D3D3", # Light grey color
+      weight = px(2)    # Thickness of the line
+    ),
+    locations = list(
+      cells_body(columns = 1),          # Adds line to the body cells of the 1st column
+      cells_column_labels(columns = 1)  # Adds line to the header of the 1st column
+    ) )%>%
+  sub_missing(columns = everything(), missing_text = "") %>% # Hide NA if clusters are uneven
+  tab_options(
+    column_labels.font.weight = "bold",
+    table.width = px(400),
+    data_row.padding = px(5)
+  ) %>%
+  cols_align(align = "center")
+tbl2
+  gtsave(tbl2, "old_vs_new_school.png")
