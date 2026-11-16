@@ -16,7 +16,7 @@ logos_path <- "logos.csv"
 
 n_teams <- 15         # rows in the table
 max_pre_rank <- 100   # only teams ranked this high preseason (Inf = everyone)
-as_of <- "Nov. 15"    # date for the subtitle
+as_of <- "Nov. 16"    # date for the subtitle
 
 ratings <- pre %>%
   inner_join(cur, by = "Team") %>%
